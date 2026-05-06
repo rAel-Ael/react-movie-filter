@@ -11,7 +11,7 @@ const ListaFilm = [
 ];
 
 function App() {
-const [film] = useState(ListaFilm);
+const [film] = useState();
   const [selectedGenere, setSelectedGenere] = useState('');
   const [filteredFilm, setFilteredFilm] = useState(ListaFilm);
 
@@ -27,7 +27,7 @@ useEffect(() => {
   setFilteredFilm(filtroFilm);
 
 }, [selectedGenere, film]);
-  
+
 
   return (
     <>
